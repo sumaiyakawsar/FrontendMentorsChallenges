@@ -1,4 +1,4 @@
-@use "../../universal-styles/functions" as f;
+@use "../../../universal-styles/functions" as f;
 $breakpoints-down: (
     "medium": f.em(1440),
     "small": f.em(375),

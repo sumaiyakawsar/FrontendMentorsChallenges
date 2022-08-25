@@ -5,11 +5,11 @@ $mobile-w:375px;
 $desktop-w:1440px;
 
 // ## Colors
+$frontend-io:#3F54A3;
+
 $white:hsl(0, 0%, 100%);
 $black:rgb(0, 0, 0);
-$light-gray: hsl(212, 45%, 89%);
-$grayish-blue: hsl(220, 15%, 55%);
-$dark-blue: hsl(218, 44%, 22%);
+$light-gray: hsl(212, 45%, 89%); 
 
 $newbie:rgb(106, 190, 205);
 $junior:rgb(170, 215, 66);
@@ -22,6 +22,7 @@ $scss:rgb(62, 84, 163);
 $js:rgb(207, 99, 144);
 $api:rgb(170, 215, 66);
 $flexbx:rgba(41, 224, 24, 0.76);
+
 // ## Typography
 $font-size-p:15px;
 

@@ -1,11 +1,10 @@
-[![wakatime](https://wakatime.com/badge/github/sumaiyakawsar/Devchallenges-by-SK.svg)](https://wakatime.com/badge/github/sumaiyakawsar/Devchallenges-by-SK)
-
-###### Newbie Path
-
-| Challenge No | Challenge Name      | Done |
-| ------------ | ------------------- | ---- |
-| 1            | QR code component   | ✔    |
-| 2            | -----------------   | ✖    |
+[![wakatime](https://wakatime.com/badge/github/sumaiyakawsar/FrontendMentorsChallenges.svg)](https://wakatime.com/badge/github/sumaiyakawsar/FrontendMentorsChallenges)
 
 
-Challenges from [frontendmentor.io](https://www.frontendmentor.io/)
+| Challenge No | Challenge Name      | Level  | Done | 
+| ------------ | ------------------- | -----  | ---- |
+| 1            | QR code component   | Newbie |  ✔   |
+| 2            | -----------------   |        |  ✖   |
+
+
+Challenges from [![Frontend.io Badge](https://img.shields.io/badge/-_Frontend.io_-3F54A3?style=plastic&labelColor=3F54A3&logo=frontend-mentor&logoColor=white&link=https://www.frontendmentor.io)](https://www.frontendmentor.io)

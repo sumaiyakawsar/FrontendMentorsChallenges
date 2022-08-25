@@ -2,11 +2,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://sumaiyakawsar.github.io/Devchallenges-by-SK/Responsive_Web_Developer/challenge_1-404_not_found">
+    <a href="https://sumaiyakawsar.github.io/FrontendMentorsChallenges/Projects/qr-code-component-project/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/sumaiyakawsar/Devchallenges-by-SK/tree/main/Responsive_Web_Developer/challenge_1-404_not_found">
+    <a href="https://github.com/sumaiyakawsar/FrontendMentorsChallenges/tree/main/Projects/qr-code-component-project">
       Solution
     </a>
     <span> | </span>
