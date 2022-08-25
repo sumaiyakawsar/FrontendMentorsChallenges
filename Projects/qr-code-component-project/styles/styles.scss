@@ -20,7 +20,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 100vh;
+    min-height: 100vh;
     .container {
         margin: 0 auto;
         max-width: 100%;
@@ -35,7 +35,7 @@ body {
             text-align: center;
             flex-direction: column;
             padding: f.em(16);
-            width: 300px;
+            max-width: 300px;
 
             &__img {
                 width: 100%;
