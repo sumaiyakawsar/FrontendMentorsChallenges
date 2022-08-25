@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800;900&display=swap');
+
+// ## Layout
+$mobile-w:375px;
+$desktop-w:1440px;
+
+// ## Colors
+$white:hsl(0, 0%, 100%);
+$black:rgb(0, 0, 0);
+$light-gray: hsl(212, 45%, 89%);
+$grayish-blue: hsl(220, 15%, 55%);
+$dark-blue: hsl(218, 44%, 22%);
+
+$newbie:rgb(106, 190, 205);
+$junior:rgb(170, 215, 66);
+$intermediate:rgb(241, 182, 4);
+$advanced:rgb(244, 137, 37);
+$guru:rgb(237, 44, 73);
+
+$html:rgb(106, 190, 205);
+$scss:rgb(62, 84, 163);
+$js:rgb(207, 99, 144);
+$api:rgb(170, 215, 66);
+$flexbx:rgba(41, 224, 24, 0.76);
+// ## Typography
+$font-size-p:15px;
+
+// Font
+$font-family: 'Outfit', sans-serif;
+
+$font-normal:400;
+$font-bold:700;
