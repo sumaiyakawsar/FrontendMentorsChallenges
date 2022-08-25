@@ -24,7 +24,7 @@
 
 ### Screenshot
 
-![Screenshot of the component](/qr-code-component-project/images/screenshot.png)
+![Screenshot of the component](images/screenshot.png)
 
 
 ## My process
