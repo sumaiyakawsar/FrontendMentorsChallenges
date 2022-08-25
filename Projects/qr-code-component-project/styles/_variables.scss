@@ -1,3 +1,4 @@
+@use "../../../universal-styles/functions" as f;
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800;900&display=swap');
 
 // ## Layout
@@ -11,7 +12,7 @@ $grayish-blue: hsl(220, 15%, 55%);
 $dark-blue: hsl(218, 44%, 22%);
 
 // ## Typography
-$font-size-p:15px;
+$font-size-p:f.rem(15);
 
 // Font
 $font-family: 'Outfit', sans-serif;
