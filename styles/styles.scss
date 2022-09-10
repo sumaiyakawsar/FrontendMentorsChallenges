@@ -105,36 +105,36 @@ body {
                                 padding: f.rem(6);
                             }
                             &.newbie {
-                                border: $newbie 1px dotted;
+                                border: $newbie 1px dotted !important;
                             }
                             &.advanced {
-                                border: $advanced 1px dotted;
+                                border: $advanced 1px dotted !important;
                             }
                             &.junior {
-                                border: $junior 1px dotted;
+                                border: $junior 1px dotted !important;
                             }
                             &.intermediate {
-                                border: $intermediate 1px dotted;
+                                border: $intermediate 1px dotted !important;
                             }
                             &.guru {
-                                border: $guru 1px dotted;
+                                border: $guru 1px dotted !important;
                             }
                             &__no {
                                 &.newbie {
-                                    background-color: $newbie;
+                                    background-color: $newbie !important;
                                 }
                                 &.junior {
-                                    background-color: $junior;
+                                    background-color: $junior !important;
                                 }
                                 &.intermediate {
-                                    background-color: $intermediate;
+                                    background-color: $intermediate !important;
                                 }
                                 &.advanced {
-                                    background-color: $advanced;
+                                    background-color: $advanced !important;
                                 }
 
                                 &.guru {
-                                    background-color: $guru;
+                                    background-color: $guru !important;
                                 }
                             }
                         }
