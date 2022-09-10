@@ -57,10 +57,15 @@ body {
             text-align: center;
         }
         .projects {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            // display: grid;
+            // grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: f.rem(16);
             .project {
+                flex: 33.33%;
                 border-radius: f.rem(16);
                 overflow: hidden;
                 display: flex;
@@ -95,12 +100,41 @@ body {
                             display: flex;
                             border-radius: f.rem(8);
                             overflow: hidden;
-                            border: $newbie 1px dotted;
+
                             span {
                                 padding: f.rem(6);
                             }
                             &__no {
-                                background-color: $newbie;
+                                &.newbie {
+                                    background-color: $newbie;
+                                }
+                                &.advanced {
+                                    background-color: $advanced;
+                                }
+                                &.junior {
+                                    background-color: $junior;
+                                }
+                                &.intermediate {
+                                    background-color: $intermediate;
+                                }
+                                &.guru {
+                                    background-color: $guru;
+                                }
+                            }
+                            &.newbie {
+                                border: $newbie 1px dotted;
+                            }
+                            &.advanced {
+                                border: $advanced 1px dotted;
+                            }
+                            &.junior {
+                                border: $junior 1px dotted;
+                            }
+                            &.intermediate {
+                                border: $intermediate 1px dotted;
+                            }
+                            &.guru {
+                                border: $guru 1px dotted;
                             }
                         }
                     }
@@ -135,76 +169,6 @@ body {
                     }
                 }
             }
-            // .project {
-            //     border-radius: f.rem(16);
-            //     overflow: hidden;
-            //     display: flex;
-            //     flex-direction: column;
-            //     gap: f.rem(16);
-            //     box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.35);
-
-            //     justify-content: space-between;
-            //     border: rgb(0, 4, 255) solid 1px;
-            //     &__img {
-            //         width: 100%;
-            //         height: 200px;
-            //         border-radius: f.rem(10);
-            //     }
-            //     &__body {
-            //         display: flex;
-            //         flex-direction: column;
-            //         gap: f.rem(16);
-            //         padding: f.rem(12);
-            //         &__header {
-            //             display: flex;
-            //             justify-content: space-between;
-            //             h4 {
-            //                 padding: f.rem(6) 0;
-            //             }
-            //             .level {
-            //                 display: flex;
-            //                 border-radius: f.rem(8);
-            //                 overflow: hidden;
-            //                 border: $newbie 1px dotted;
-            //                 span {
-            //                     padding: f.rem(6);
-            //                 }
-            //                 &__no {
-            //                     background-color: $newbie;
-            //                 }
-            //             }
-            //         }
-
-            //         &__tags {
-            //             display: flex;
-            //             gap: f.rem(8);
-            //             .tag {
-            //                 box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.35);
-
-            //                 // background: rgb(2, 196, 255);
-            //                 padding: 0 f.rem(8);
-            //                 border-radius: f.rem(8);
-            //                 font-weight: $font-bold;
-
-            //                 &.html {
-            //                     color: $html;
-            //                 }
-            //                 &.scss {
-            //                     color: $scss;
-            //                 }
-            //                 &.js {
-            //                     color: $js;
-            //                 }
-            //                 &.api {
-            //                     color:$api;
-            //                 }
-            //                 &.flexbx{
-            //                     color:$flexbx;
-            //                 }
-            //             }
-            //         }
-            //     }
-            // }
         }
     }
 
