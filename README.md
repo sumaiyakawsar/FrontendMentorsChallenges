@@ -3,8 +3,8 @@
 
 | Challenge No | Challenge Name      | Level  | Done | 
 | ------------ | ------------------- | -----  | ---- |
-| 1            | QR code component   | Newbie |  ✔   |
-| 2            | REST Countries API with color theme switcher solution   |  Advanced |  ✔   |
+| 1            | [QR code component](https://github.com/sumaiyakawsar/FrontendMentorsChallenges/tree/main/Projects/qr-code-component-project)   | Newbie |  ✔   |
+| 2            | [REST Countries API with color theme switcher solution](https://github.com/sumaiyakawsar/rest-api-countries-react)   |  Advanced |  ✔   |
 | 3            | -----------------   | ------ |  ✖   |
 
 
