@@ -104,23 +104,6 @@ body {
                             span {
                                 padding: f.rem(6);
                             }
-                            &__no {
-                                &.newbie {
-                                    background-color: $newbie;
-                                }
-                                &.advanced {
-                                    background-color: $advanced;
-                                }
-                                &.junior {
-                                    background-color: $junior;
-                                }
-                                &.intermediate {
-                                    background-color: $intermediate;
-                                }
-                                &.guru {
-                                    background-color: $guru;
-                                }
-                            }
                             &.newbie {
                                 border: $newbie 1px dotted;
                             }
@@ -135,6 +118,24 @@ body {
                             }
                             &.guru {
                                 border: $guru 1px dotted;
+                            }
+                            &__no {
+                                &.newbie {
+                                    background-color: $newbie;
+                                }
+                                &.junior {
+                                    background-color: $junior;
+                                }
+                                &.intermediate {
+                                    background-color: $intermediate;
+                                }
+                                &.advanced {
+                                    background-color: $advanced;
+                                }
+
+                                &.guru {
+                                    background-color: $guru;
+                                }
                             }
                         }
                     }
