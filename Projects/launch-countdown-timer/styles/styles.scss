@@ -1,0 +1,165 @@
+@use "../../../universal-styles/functions" as f;
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,700;1,700&display=swap");
+@import "variables";
+@import "mq";
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    background: url(../images/pattern-hills.svg) bottom no-repeat, url(../images/bg-stars.svg) no-repeat,
+        linear-gradient(to top, $soft-red-80 0%, $dark-blue 30%);
+
+    font-family: $font-family;
+    font-size: $font-size-p;
+    display: flex;
+    flex-direction: column;
+    gap: f.rem(32);
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    .container {
+        display: flex;
+        padding: f.rem(32);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: f.rem(32);
+        width: 100%;
+     
+
+        height: 90vh;
+        .heading {
+            color: $white;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: f.rem(7);
+            margin-bottom: f.rem(32);
+            text-shadow: $soft-red-100 1px 1px 5px;
+        }
+
+        .countdown-container {
+            display: flex;
+            gap: f.rem(32);
+            width: 100%;
+            justify-content: center;
+            .countdown-el {
+                box-shadow: $dark-black-blue 0px 10px 2px;
+                position: relative;
+                color: $soft-red-100;
+                height: 100px;
+                width: 120px;
+                background: $dark-desaturated-blue;
+                border-radius: f.rem(8);
+
+                font-size: 4.8rem;
+                overflow: hidden;
+                text-align: center;
+                vertical-align: middle;
+                //Side 2 circles
+                &::before,
+                &::after {
+                    content: "";
+                    position: absolute;
+                    z-index: 6;
+                    top: calc(50% - 5px);
+                    background: rgb(0, 0, 0, 50%);
+                    border-radius: 50%;
+                    width: 10px;
+                    height: 10px;
+                }
+                &::before {
+                    left: -5px;
+                }
+                &::after {
+                    right: -5px;
+                }
+
+                & > span {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                }
+                .top {
+                    z-index: 3;
+                    color: $soft-red-80;
+                    background-color: $saturated-blue;
+                    transform-origin: 50% 100%;
+                    transform: perspective(200px);
+                }
+
+                .top,
+                .top-back {
+                    height: 50%;
+                    overflow: hidden;
+                    backface-visibility: hidden;
+                }
+
+                .top-back {
+                    z-index: 4;
+                    bottom: 0;
+                    transform-origin: 50% 0;
+                    background-color: $saturated-blue;
+                    transform: perspective(200px) rotateX(180deg);
+                    span {
+                        position: absolute;
+                        top: -100%;
+                        left: 0;
+                        right: 0;
+                    }
+                }
+
+                .bottom {
+                    z-index: 1;
+                }
+                .bottom-back {
+                    z-index: 2;
+                    top: 0;
+                    height: 50%;
+                    overflow: hidden;
+                    background-color: $saturated-blue;
+                }
+            }
+        }
+        .describe-container {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            letter-spacing: f.rem(5);
+            color: $grayish-blue;
+            text-transform: uppercase;
+
+            gap: f.rem(32);
+            p {
+                width: 120px;
+                text-align: center;
+            }
+        }
+    }
+    .socials {
+        display: flex;
+        padding-block-end: f.rem(24);
+        gap: f.rem(24);
+        .social__icon {
+            color: $grayish-blue;
+            &:hover {
+                color: $soft-red-100;
+            }
+        }
+    }
+    .attribution {
+        padding-block-end: f.rem(16);
+        font-size: f.rem(11);
+        color: $grayish-blue;
+        text-align: center;
+        a {
+            color: $soft-red-100;
+        }
+    }
+}

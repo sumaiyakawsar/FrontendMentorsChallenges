@@ -65,7 +65,7 @@ body {
             // grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: f.rem(16);
             .project {
-                flex: 33.33%;
+                flex: 33%;
                 border-radius: f.rem(16);
                 overflow: hidden;
                 display: flex;

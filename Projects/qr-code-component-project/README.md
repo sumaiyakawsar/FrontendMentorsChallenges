@@ -24,7 +24,7 @@
 
 ### Screenshot
 
-![Screenshot of the component](images/screenshot.png)
+![Screenshot of the component](../../images/screenshot.png)
 
 
 ## My process
@@ -47,4 +47,4 @@ The more projects I complete the more I learn.
 
 <!-- - Website - [Add your name here](https://www.your-site.com) -->
 
-[![Twitter Badge](https://img.shields.io/badge/-_SumaiyaKawsar_-3F54A3?style=plastic&labelColor=3F54A3&logo=frontend-mentor&logoColor=white&link=https://www.frontendmentor.io/profile/sumaiyakawsar)](https://www.frontendmentor.io/profile/sumaiyakawsar) [![Twitter Badge](https://img.shields.io/badge/-_SumaiyaKawsar_-55acee?style=plastic&labelColor=55acee&logo=twitter&logoColor=white&link=https://twitter.com/SumaiyaKawsar_)](https://twitter.com/SumaiyaKawsar_)
+[![FrontendMentor Badge](https://img.shields.io/badge/-_SumaiyaKawsar_-3F54A3?style=plastic&labelColor=3F54A3&logo=frontend-mentor&logoColor=white&link=https://www.frontendmentor.io/profile/sumaiyakawsar)](https://www.frontendmentor.io/profile/sumaiyakawsar) [![Twitter Badge](https://img.shields.io/badge/-_SumaiyaKawsar_-55acee?style=plastic&labelColor=55acee&logo=twitter&logoColor=white&link=https://twitter.com/SumaiyaKawsar_)](https://twitter.com/SumaiyaKawsar_)

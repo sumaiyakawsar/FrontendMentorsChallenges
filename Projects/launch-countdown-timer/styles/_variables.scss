@@ -1,0 +1,20 @@
+@use "../../../universal-styles/functions" as f;
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,700;1,700&display=swap");
+
+// Colors
+// Primary
+$grayish-blue: rgb(132, 134, 169);
+$soft-red-100: rgba(251, 96, 135,100%);
+$soft-red-80: rgba(251, 96, 135, 80%);
+// Neutral
+$white: rgb(255, 255, 255);
+$saturated-blue: rgb(42, 42, 65);
+$dark-desaturated-blue: rgb(52, 54, 80);
+$dark-blue: rgb(30, 31, 41);
+$dark-black-blue: rgb(25, 26, 36);
+
+// ## Typography
+$font-size-p: f.rem(14);
+
+// Font
+$font-family: "Red Hat Text", sans-serif;
