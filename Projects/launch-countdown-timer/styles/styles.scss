@@ -31,7 +31,6 @@ body {
         justify-content: center;
         gap: f.rem(32);
         width: 100%;
-     
 
         height: 90vh;
         .heading {
@@ -142,24 +141,30 @@ body {
             }
         }
     }
-    .socials {
+    footer {
         display: flex;
-        padding-block-end: f.rem(24);
+        flex-direction: column;
         gap: f.rem(24);
-        .social__icon {
-            color: $grayish-blue;
-            &:hover {
-                color: $soft-red-100;
+        .socials {
+            display: flex;
+            justify-content: center;
+            padding-block-end: f.rem(24);
+            gap: f.rem(24);
+            .social__icon {
+                color: $grayish-blue;
+                &:hover {
+                    color: $soft-red-100;
+                }
             }
         }
-    }
-    .attribution {
-        padding-block-end: f.rem(16);
-        font-size: f.rem(11);
-        color: $grayish-blue;
-        text-align: center;
-        a {
-            color: $soft-red-100;
+        .attribution {
+            padding-block-end: f.rem(16);
+            font-size: f.rem(11);
+            color: $grayish-blue;
+            text-align: center;
+            a {
+                color: $soft-red-100;
+            }
         }
     }
 }
