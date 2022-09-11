@@ -98,10 +98,12 @@ body {
                         }
                         .level {
                             display: flex;
+                            flex-wrap: wrap;
                             border-radius: f.rem(8);
                             overflow: hidden;
+                          
 
-                            span {
+                            span {flex-grow: 1;text-align: center;
                                 padding: f.rem(6);
                             }
                             &.newbie {
@@ -142,6 +144,7 @@ body {
 
                     &__tags {
                         display: flex;
+                        flex-wrap: wrap;
                         gap: f.rem(8);
                         .tag {
                             box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.35);
