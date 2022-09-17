@@ -1,0 +1,36 @@
+@use "../../../universal-styles/functions" as f;
+$breakpoints-down: (
+    "medium": f.em(1440),
+    "small": f.em(600),
+);
+@mixin breakpoint($size) {
+    @media (max-width: map-get($breakpoints-down, $size)) {
+        @content;
+    }
+}
+
+//Media Queries(Medium Devices - 1440px)
+@include breakpoint(medium) {
+}
+
+//Media Queries(small Devices - 375px)
+@include breakpoint(small) {
+    .container {
+        width: 80% !important;
+
+        .card-container {
+            flex-direction: column !important;
+            width: 100% !important;
+            padding: f.rem(32) f.rem(0);
+            .card {
+                &.sedan {
+                    border-radius: f.rem(10) f.rem(10) f.rem(0) f.rem(0) !important;
+                }
+
+                &.luxury {
+                    border-radius: f.rem(0) f.rem(0) f.rem(10) f.rem(10) !important;
+                }
+            }
+        }
+    }
+}

@@ -24,7 +24,7 @@
 
 ### Screenshot
 
-![Screenshot of the component](../../images/screenshot.png)
+![Screenshot of the component](../../images/project1-qr.png)
 
 
 ## My process

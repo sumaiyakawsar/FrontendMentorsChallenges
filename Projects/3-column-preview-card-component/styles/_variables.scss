@@ -1,0 +1,19 @@
+@use "../../../universal-styles/functions" as f;
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+// Primary
+
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+
+// Neutral
+
+$trans-white: hsla(0, 0%, 100%, 0.75);// (paragraphs)
+$very-light-gray: hsl(0, 0%, 95%); // (background, headings, buttons)
+
+// ## Typography
+$font-size-p: f.rem(15);
+
+//Fonts
+$big-shoulders: "Big Shoulders Display", cursive;
+$lexend-deca: "Lexend Deca", sans-serif;
