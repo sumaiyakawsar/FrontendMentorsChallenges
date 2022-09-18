@@ -49,12 +49,12 @@ body {
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: flex-start;
-                height: 65vh;
                 min-width: 200px;
                 padding: f.rem(32);
                 &__top {
                     display: flex;
                     flex-direction: column;
+                    margin-bottom: f.rem(80);
                     justify-content: space-between;
                     gap: f.rem(32);
                     img {
