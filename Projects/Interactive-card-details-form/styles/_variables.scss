@@ -1,0 +1,22 @@
+@use "../../../universal-styles/functions" as f;
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+// ## Layout
+$mobile-w: 375px;
+$desktop-w: 1440px;
+
+// ## Primary Colors
+$red: hsl(0, 100%, 66%); //input errors
+$l-gradient: linear-gradient(to left, hsl(249, 99%, 64%) 0%,hsl(278, 94%, 30%) 30%);
+
+// ## Neutral Colors
+$white: hsl(0, 0%, 100%);
+$l-gray-violet: hsl(270, 3%, 87%);
+$dark-gray-violet: hsl(279, 6%, 55%);
+$v-dark-violet: hsl(278, 68%, 11%);
+
+// ## Typography
+$font-size-p: f.rem(16);
+
+// Font
+$font-family: "Space Grotesk", sans-serif;
+$font-normal: 500;

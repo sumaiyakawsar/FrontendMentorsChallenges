@@ -11,39 +11,105 @@
   <title> Interactive card details form | Frontend Mentor </title>
 
   <link rel="stylesheet" href="styles/styles.css" />
+  <script src="js/script.js" defer></script>
 </head>
 
 <body>
+  <main class="container">
+    <section class="card-section">
+      <div class="card front">
+        <div class="card-inner">
+          <div class="card-logo">
+            <img src="images/card-logo.svg" alt="">
+          </div>
+          <div class="card-details">
+            <div>
+              <p id="cardNo"> 0000 0000 0000 0000</p>
+            </div>
+            <div class="more-details">
+              <p id="cardName">Jane Appleseed</p>
+              <p>
+                <span id="expMM">00</span>/<span id="expYY">00</span>
+              </p>
+            </div>
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+          </div>
 
-  000
+        </div>
+      </div>
+      <div class="card back">
+        <div class="card-inner">
+          <p id="cardcvv"> 000</p>
+        </div>
 
-  Cardholder Name
-  e.g. Jane Appleseed
+      </div>
 
-  Card Number
-  e.g. 1234 5678 9123 0000
+    </section>
 
-  Exp. Date (MM/YY)
-  MM
-  YY
+    <section>
+      <form action="">
+        <div class="step active">
+          <div class="form-details">
+            <div class="form-group">
+              <label for="cardholder-name">Cardholder Name</label>
+              <input type="text" name="cardholder-name" id="cardNameI" class="input" type="text"
+                onkeyup="rtimenameupdate();" placeholder="e.g. Jane Appleseed" />
+              <span id="errorMsg" style="display:none;">you can give score -10 to +10 only</span>
 
-  CVC
-  e.g. 123
+            </div>
+            <div class="form-group">
+              <label for="card-no">Card Number</label>
+              <input type="text" name="card-no" id="cardNoI" class="input" type="number"
+                placeholder="e.g. 1234 5678 9123 0000" onkeyup="rtimenoupdate()" maxlength="19" />
+              <span id="errorMsg" style="display:none;">you can give score -10 to +10 only</span>
 
-  Confirm
+            </div>
+            <div class="imp-info">
+              <div class="form-group">
+                <label for="exp-date">Exp. Date (MM/YY)</label>
+                <div class="exp-date">
+                  <input type="text" name="exp-month" class="input" type="number" id="expMMI" placeholder="MM"
+                    onkeyup="rtimeexpmmupdate()" maxlength="2" min="1" max="12" />
+                  <input type="text" name="exp-year" class="input" type="number" id="expYYI" placeholder="YY"
+                    onkeyup="rtimeexpyyupdate()" maxlength="2" minlength="2" min="00" max="23"/>
+                </div>
+              </div>
 
-  <!-- Completed state start -->
+              <div class="form-group">
+                <label for="card-no">CVC</label>
+                <input type="text" name="card-no" class="input" type="number" id="cardCVCI" placeholder="e.g. 123"
+                  onkeyup="rtimecvcupdate()" maxlength="3" />
+              </div>
 
-  Thank you!
-  We've added your card details
-  Continue
-<main>
-  
-</main>
+            </div>
+
+
+            <button type="button">
+              Confirm
+            </button>
+          </div>
+
+        </div>
+
+
+
+
+
+
+        <!-- Completed state start -->
+        <div class="step">
+          Thank you!
+          We've added your card details
+          <button type="button">
+            Continue
+          </button>
+        </div>
+      </form>
+
+
+    </section>
+
+  </main>
   <footer>
     <div class="attribution">
       Challenge by
