@@ -15,10 +15,14 @@ function rtimenameupdate() {
 }
 cardNo.innerHTML = "0000 0000 0000 0000";
 function rtimenoupdate() {
-  cNoI.value = cNoI.value.replace(/\W/gi, '').replace(/(.{4})/g, '$1 ')
-  cardNo.innerHTML = cNoI.value.replace(/\W/gi, '').replace(/(.{4})/g, '$1 ');
+  cardNoI = cNoI.value;
+  cNoI.value = cardNoI.replace(/\W/gi, '').replace(/(.{4})/g, '$1 ')
+  cardNo.innerHTML = cardNoI.replace(/\W/gi, '').replace(/(.{4})/g, '$1 ');
   if(!cNoI.value){
     
+  }
+  if(cNoI.value){
+
   }
 }
 

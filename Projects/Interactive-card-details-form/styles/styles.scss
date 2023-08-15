@@ -21,8 +21,9 @@ body {
 
     .container {
         display: flex;
-        min-height: 97vh;
-        max-height: 100vh;
+        // 
+        // min-height: 97vh;
+        // max-height: 100vh;
 
         section {
             align-items: center;
@@ -143,6 +144,11 @@ body {
                             padding: f.rem(16);
                             width: 100%;
                             cursor: pointer;
+                            &:hover{
+                                 background: $l-gray-violet;
+                                 outline: 1px solid $v-dark-violet;
+                                 color:$v-dark-violet;
+                            }
                         }
                         .imp-info {
                             display: flex;
