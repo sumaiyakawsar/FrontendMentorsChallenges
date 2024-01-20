@@ -20,10 +20,11 @@ body {
     justify-content: center;
 
     .container {
-        display: flex;
-        // 
-        min-height: 97vh;
-        // max-height: 100vh;
+        display: flex; 
+        flex-direction: row;
+        min-height: 95vh;
+        max-height: 100vh;
+
 
         section {
             align-items: center;
@@ -113,11 +114,12 @@ body {
                         max-width: 100%;
                         display: flex;
                         flex-direction: column;
-                        gap: f.rem(32);
+                        gap: f.rem(24);
                         .form-group {
                             display: flex;
                             flex-direction: column;
-                            gap: f.rem(8);
+                            // gap: f.rem(8);
+                            border: red 1px solid;
                             label {
                                 text-transform: uppercase;
                             }
@@ -129,6 +131,11 @@ body {
                                 &:focus {
                                     border: 1px solid $v-dark-violet;
                                 }
+                            }
+                            #errorMsg{
+                                color: red;
+                                font-size: x-small;
+                                // visibility: hidden;
                             }
 
                             .exp-date {

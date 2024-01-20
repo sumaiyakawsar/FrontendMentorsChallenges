@@ -47,21 +47,21 @@
     </section>
 
     <section>
-      <form action="">
+      <form action="" id="form">
         <div class="step active">
           <div class="form-details">
             <div class="form-group">
               <label for="cardholder-name">Cardholder Name</label>
               <input type="text" name="cardholder-name" id="cardNameI" class="input" type="text"
                 onkeyup="rtimenameupdate();" placeholder="e.g. Jane Appleseed" required />
-              <span id="errorMsg" style="display:none;">{error}</span>
+              <span id="errorMsg">{error}</span>
 
             </div>
             <div class="form-group">
               <label for="card-no">Card Number</label>
               <input type="text" name="card-no" id="cardNoI" class="input" type="number"
-                placeholder="e.g. 1234 5678 9123 0000" onkeyup="rtimenoupdate()" maxlength="18" required />
-              <span id="errorMsg" style="display:none;">{error}</span>
+                placeholder="e.g. 1234 5678 9123 0000" onkeyup="rtimenoupdate()" maxlength="19" required />
+              <span id="errorMsg">{error}</span>
 
             </div>
             <div class="imp-info">
@@ -73,14 +73,14 @@
                   <input type="text" name="exp-year" class="input" type="number" id="expYYI" placeholder="YY"
                     onkeyup="rtimeexpyyupdate()" maxlength="2" minlength="2" min="00" max="23" required />
                 </div>
-                <span id="errorMsg" style="display:none;">{error}</span>
+                <span id="errorMsg">{error}</span>
               </div>
 
               <div class="form-group">
                 <label for="card-no">CVC</label>
                 <input type="text" name="card-no" class="input" type="number" id="cardCVCI" placeholder="e.g. 123"
                   onkeyup="rtimecvcupdate()" maxlength="3" required />
-                <span id="errorMsg" style="display:none;">{error}</span>
+                <span id="errorMsg-cardNo">{error}</span>
               </div>
 
             </div>
