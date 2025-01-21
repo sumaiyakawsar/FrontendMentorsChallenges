@@ -14,4 +14,5 @@
 | 6            | [Advice Generator](https://sumaiyakawsar.github.io/sk-advice-generator/)                                                                                                                          | Junior     | ✔️    |
 | 7            | ---------      | ---------     | ❌    |
 
-Challenges from [![Frontend.io Badge](https://img.shields.io/badge/-_Frontend.io_-3F54A3?style=plastic&labelColor=3F54A3&logo=frontend-mentor&logoColor=white&link=https://www.frontendmentor.io)](https://www.frontendmentor.io)
+Challenges from [![Frontend.io Badge](https://img.shields.io/badge/-_Frontend.io_-3F54A3?style=plastic&labelColor=3F54A3&logo=frontend-mentor&logoColor=white&link=https://www.frontendmentor.io)](https://www.frontendmentor.io/profile/sumaiyakawsar)
+
