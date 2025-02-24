@@ -1,16 +1,16 @@
-# Frontend Mentor - QR code component solution
+# Frontend Mentor - Blog Preview Card
 
 <div align="center">
   <h3>
-    <a href="https://sumaiyakawsar.github.io/FrontendMentorsChallenges/Projects/qr-code-component-project/">
+    <a href="https://sumaiyakawsar.github.io/FrontendMentorsChallenges/Projects/blog-preview-card">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/sumaiyakawsar/FrontendMentorsChallenges/tree/main/Projects/qr-code-component-project">
+    <a href="https://github.com/sumaiyakawsar/FrontendMentorsChallenges/tree/main/Projects/blog-preview-card">
       Solution
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H">
+    <a href="https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS">
       Challenge
     </a>
   </h3>
@@ -24,7 +24,7 @@
 
 ### Screenshot
 
-![Screenshot of the component](../../images/project1-qr.png)
+![Screenshot of the component](../../images/project7-blog-preview-card.png)
 
 
 ## My process
@@ -34,10 +34,9 @@
 - Semantic HTML5 markup
 - SCSS custom properties
 - Flexbox
-<!-- - Mobile-first workflow -->
 
 ### What I learned
-I have learned how to create and use functions in scss.  
+Nothing new. Just did this faster than before and no chatGPT
 
 ### Continued development
 
@@ -47,4 +46,4 @@ The more projects I complete the more I learn.
 
 <!-- - Website - [Add your name here](https://www.your-site.com) -->
 
-[![FrontendMentor Badge](https://img.shields.io/badge/-_SumaiyaKawsar_-3F54A3?style=plastic&labelColor=3F54A3&logo=frontend-mentor&logoColor=white&link=https://www.frontendmentor.io/profile/sumaiyakawsar)](https://www.frontendmentor.io/profile/sumaiyakawsar) [![Twitter Badge](https://img.shields.io/badge/-_SumaiyaKawsar_-55acee?style=plastic&labelColor=55acee&logo=twitter&logoColor=white&link=https://twitter.com/SumaiyaKawsar_)](https://twitter.com/SumaiyaKawsar_)
+[![FrontendMentor Badge](https://img.shields.io/badge/-_SumaiyaKawsar_-3F54A3?style=plastic&labelColor=3F54A3&logo=frontend-mentor&logoColor=white&link=https://www.frontendmentor.io/profile/sumaiyakawsar)](https://www.frontendmentor.io/profile/sumaiyakawsar) [![Twitter Badge](https://img.shields.io/badge/-_SumaiyaKawsar_-55acee?style=plastic&labelColor=55acee&logo=twitter&logoColor=white&link=https://x.com/SumaiyaKawsar_)](https://x.com/SumaiyaKawsar_)
