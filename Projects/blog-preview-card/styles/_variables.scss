@@ -1,0 +1,21 @@
+@use "../../../universal-styles/functions" as f;
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap');
+
+// ## Layout
+$mobile-w:375px;
+$desktop-w:1440px;
+
+// ## Colors
+$white:hsl(0, 0%, 100%);
+$yellow: hsl(47, 88%, 63%);
+$gray-500: hsl(0, 0%, 42%);
+$gray-950: hsl(0, 0%, 7%);
+
+// ## Typography
+$font-size-p:f.rem(16);
+
+// Font
+$font-family: "Figtree", serif;
+
+$font-normal:500;
+$font-bold:800;
