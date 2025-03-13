@@ -13,10 +13,16 @@
     text-decoration: none;
 }
 body {
-    background:
-        url("../images/bg-pattern-top.svg") no-repeat top left/35% 50%,
-        url("../images/bg-pattern-bottom.svg") no-repeat bottom right/35% 50%,
-        $dark-cyan;
+    background-color: $dark-cyan; /* or the code of that blue color */
+
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+
+    background-position:
+        top -25vw left -20vw,
+        bottom -25vw right -20vw;
+
+    background-repeat: no-repeat, no-repeat;
+    z-index: -10;
     font-family: $font-family;
     display: flex;
     font-size: f.rem(16);
@@ -24,7 +30,7 @@ body {
     align-items: center;
     justify-content: space-between;
     min-height: 100vh;
-    // line-height: 150%;
+    line-height: 150%;
     .container {
         min-width: 327px;
         max-width: 384px;
@@ -34,7 +40,7 @@ body {
             gap: f.rem(24);
             background: $white;
             flex-direction: column;
-
+            z-index: 999;
             &__header {
                 position: relative;
                 display: flex;
