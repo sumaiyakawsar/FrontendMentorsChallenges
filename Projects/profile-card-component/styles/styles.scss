@@ -1,0 +1,110 @@
+@use "../../../universal-styles/functions" as f;
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap");
+
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    background:
+        url("../images/bg-pattern-top.svg") no-repeat top left/35% 50%,
+        url("../images/bg-pattern-bottom.svg") no-repeat bottom right/35% 50%,
+        $dark-cyan;
+    font-family: $font-family;
+    display: flex;
+    font-size: f.rem(16);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    // line-height: 150%;
+    .container {
+        min-width: 327px;
+        max-width: 384px;
+        .card {
+            border-radius: f.rem(20);
+            display: flex;
+            gap: f.rem(24);
+            background: $white;
+            flex-direction: column;
+
+            &__header {
+                position: relative;
+                display: flex;
+                justify-content: center;
+            }
+            &__img {
+                width: 100%;
+                // height: auto;
+                border-radius: f.rem(20) f.rem(20) 0 0;
+            }
+
+            &__details {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: f.rem(12);
+                font-size: $font-size-p;
+                padding: f.rem(32) 0 0 0;
+            }
+            &__profile {
+                font-weight: $font-bold;
+                // height: auto;
+            }
+            &__name {
+                color: $very-dark-desaturated-blue;
+            }
+
+            &__age,
+            &__city {
+                color: $dark-grayish-blue;
+            }
+            &__footer {
+                border-top: 1px $dark-gray solid;
+                display: flex;
+                justify-content: space-around;
+                padding: f.rem(16);
+            }
+            &__info {
+                padding: f.rem(16);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            &__number {
+                font-weight: $font-bold;
+                font-size: x-large;
+                color: $very-dark-desaturated-blue;
+            }
+            &__topic {
+                color: $dark-gray;
+            }
+        }
+        .profile_img {
+            position: absolute;
+            top: 80px;
+            display: block;
+        }
+        .profile_pic {
+            border-radius: 50%;
+            object-fit: cover;
+            border: f.rem(5) $white solid;
+        }
+    }
+
+    .attribution {
+        padding-block-end: $font-size-p;
+        font-size: f.rem(12);
+        text-align: center;
+        a {
+            color: $white;
+        }
+    }
+}

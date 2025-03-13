@@ -1,0 +1,22 @@
+@use "../../../universal-styles/functions" as f; 
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+// ## Layout
+$mobile-w:375px;
+$desktop-w:1440px;
+
+// ## Colors
+$white:hsl(0, 0%, 100%);
+$dark-cyan: hsl(185, 75%, 39%);
+$very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$dark-grayish-blue: hsl(227, 10%, 46%);
+$dark-gray: hsl(0, 0%, 59%);
+
+// ## Typography
+$font-size-p:f.rem(18);
+
+// Font
+$font-family: "Kumbh Sans", sans-serif;
+
+$font-normal:400;
+$font-bold:700;
