@@ -1,4 +1,4 @@
-# Frontend Mentor - Blog Preview Card
+# Frontend Mentor - Profile Card Component
 
 <div align="center">
   <h3>
@@ -36,7 +36,7 @@
 - Flexbox
 
 ### What I learned
-Nothing new. Just did this faster than before and no chatGPT
+
 
 ### Continued development
 
