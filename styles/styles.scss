@@ -58,6 +58,10 @@ body {
             color: $black;
         }
     }
+
+    .social-icon {
+        width: 30px;
+    }
     main {
         padding: f.rem(32) 0;
 
@@ -74,7 +78,7 @@ body {
             justify-content: space-between;
             gap: f.rem(56);
             .project {
-                width:400px;
+                width: 400px;
                 border-radius: f.rem(16);
                 overflow: hidden;
                 display: flex;
@@ -82,7 +86,7 @@ body {
                 gap: f.rem(16);
                 box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.35);
 
-                &__img { 
+                &__img {
                     height: 200px;
                     border-radius: f.rem(10);
                     box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.35);

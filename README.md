@@ -14,8 +14,10 @@
 | 6            | [Advice Generator](https://sumaiyakawsar.github.io/sk-advice-generator/)                                                                                                                          | Junior     | ✔️    |
 | 7            | [Blog Preview Card](https://sumaiyakawsar.github.io/FrontendMentorsChallenges/Projects/blog-preview-card)      | Newbie     | ✔️    |
 | 8            | [Profile Card Component](https://sumaiyakawsar.github.io/FrontendMentorsChallenges/Projects/profile-card-component)      | Newbie     | ✔️    |
-| 9            | ---------      | ---------     | ❌    |
+| 9            | [NFT preview card component](https://sumaiyakawsar.github.io/FrontendMentorsChallenges/Projects/nft-preview-card-component)      | Newbie     | ✔️    |
 | 10            | ---------      | ---------     | ❌    |
+| 11            | ---------      | ---------     | ❌    |
+| 12            | ---------      | ---------     | ❌    |
 
 Challenges from [![Frontend.io Badge](https://img.shields.io/badge/-_Frontend.io_-3F54A3?style=plastic&labelColor=3F54A3&logo=frontend-mentor&logoColor=white&link=https://www.frontendmentor.io)](https://www.frontendmentor.io/profile/sumaiyakawsar)
 

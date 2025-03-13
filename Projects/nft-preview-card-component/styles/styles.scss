@@ -1,0 +1,150 @@
+@use "../../../universal-styles/functions" as f;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    background: $very-dark-blue-bg;
+    font-family: $font-family;
+    display: flex;
+    font-size: f.rem(18);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    line-height: 150%;
+
+    .container {
+        min-width: 327px;
+        max-width: 384px;
+        .card {
+            background-color: $very-dark-blue-card;
+            color: $white;
+            border-radius: f.rem(20);
+            display: flex;
+            box-shadow: 0px 0 rgba(0, 0, 0);
+            gap: f.rem(24);
+            flex-direction: column;
+            padding: f.em(24);
+
+            .img__container {
+                border-radius: f.rem(10);
+                background-color: $cyan;
+                position: relative;
+                overflow: hidden;
+
+                .nft_img { 
+                    width: 100%;
+                    display: block;
+                    transition: opacity 0.3s ease;
+                }
+
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: $cyan-trans;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    opacity: 0;
+                    transition: opacity 0.3s ease-in-out;
+                }
+
+                &:hover {
+                    .overlay {
+                        opacity: 50%;
+                    }
+                }
+            }
+            .eye-icon {
+                opacity: 1;
+                z-index: 10;
+            }
+            &__details {
+                display: flex;
+                gap: f.rem(12);
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            &__header {
+                font-weight: $font-bold;
+                font-size: f.rem(24);
+                &:hover {
+                    color: $cyan;
+                    cursor: pointer;
+                }
+            }
+            &__body {
+                font-weight: $font-thin;
+                font-size: $font-size-p;
+                color: $soft-blue;
+            }
+            &__flex {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &__amount {
+                color: $cyan;
+                font-weight: $font-bold;
+            }
+            &__info {
+                display: flex;
+                gap: f.rem(8);
+                align-items: center;
+            }
+            &__time {
+                color: $soft-blue;
+            }
+            &__footer {
+                border-top: 1px solid $very-dark-blue-line;
+                padding-top: f.rem(14);
+                display: flex;
+                align-items: center;
+                gap: f.rem(12);
+                color: $soft-blue;
+                .author {
+                    &__img {
+                        width: 32px;
+                        height: 32px;
+                        border: $white solid 2px;
+                        border-radius: 50%;
+                    }
+                    &__name {
+                        color: $white;
+                        font-weight: $font-thin;
+
+                        &:hover {
+                            color: $cyan;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .attribution {
+        padding-block-end: $font-size-p;
+        font-size: f.rem(12);
+        text-align: center;
+        color: $white;
+        a {
+            color: hsl(228, 45%, 44%);
+        }
+    }
+}

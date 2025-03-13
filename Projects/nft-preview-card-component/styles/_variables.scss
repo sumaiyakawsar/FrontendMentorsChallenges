@@ -1,0 +1,26 @@
+@use "../../../universal-styles/functions" as f;  
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+// ## Layout
+$mobile-w:375px;
+$desktop-w:1440px;
+
+// ## Colors
+$white:hsl(0, 0%, 100%);
+
+$soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$cyan-trans: hsl(178, 100%, 50%, 0.5);
+$very-dark-blue-bg: hsl(217, 54%, 11%);
+$very-dark-blue-card:  hsl(216, 50%, 16%);
+$very-dark-blue-line:  hsl(215, 32%, 27%);
+
+// ## Typography
+$font-size-p:f.rem(18);
+
+// Font
+$font-family: "Outfit", sans-serif;
+
+$font-thin:300;
+$font-normal:400;
+$font-bold:600;
