@@ -1,0 +1,114 @@
+@use "../../../universal-styles/functions" as f;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    background: $grey-900;
+    font-family: $font-family;
+    display: flex;
+    font-size: $font-size-p;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    line-height: 150%;
+
+    .container {
+        min-width: 327px;
+        max-width: 400px;
+        .card {
+            background-color: $grey-800;
+            color: $white;
+            border-radius: f.rem(14);
+            display: flex;
+            box-shadow: 0px 0 rgba(0, 0, 0);
+            gap: f.rem(24);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: f.rem(40);
+
+            .img__container {
+                img {
+                    border-radius: 50%;
+                    width: f.rem(90);
+                    height: f.rem(90);
+                    object-fit: cover;
+                }
+            }
+
+            &__details {
+                display: flex;
+                gap: f.rem(12);
+                flex-direction: column;
+                align-items: center;
+                .location {
+                    color: $green;
+                    font-weight: $font-bold;
+                    font-size: f.rem(12);
+                }
+            }
+
+            &__header {
+                font-weight: $font-ex-bold;
+                font-size: f.rem(24);
+            }
+            &__body {
+                font-weight: $font-normal;
+                font-size: $font-size-p;
+                opacity: 50%;
+                padding: 0 f.rem(24);
+                text-align: center;
+            }
+
+            &__social {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: f.rem(12);
+                flex-direction: column;
+
+                a {
+                    width: 100%;
+                    border-radius: f.rem(8);
+                    text-align: center;
+                    color: $white;
+                    font-weight: $font-bold;
+                    background: $grey-700;
+                    transition: background-color 0.5s, color 0.5s; /* or .5s for short */
+                    padding: f.rem(12);
+
+                    &:hover {
+                        background: $green;
+                        color: $grey-900;
+                        cursor: pointer;
+                    }
+                    &:focus {
+                        outline: 3px solid $green; 
+                        outline-offset: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+    .attribution {
+        padding-block-end: $font-size-p;
+        font-size: f.rem(12);
+        text-align: center;
+        color: $white;
+        a {
+            color: $green;
+        }
+    }
+}

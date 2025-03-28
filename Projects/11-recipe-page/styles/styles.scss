@@ -1,0 +1,137 @@
+@use "../../../universal-styles/functions" as f;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap");
+
+@import "variables";
+@import "mq";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    // list-style: none;
+    text-decoration: none;
+}
+body {
+    background: $stone-100;
+    font-family: $outfit-font-family;
+    display: flex;
+    font-size: $font-size-p;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    line-height: 1.5;
+    //
+    color: $stone-600;
+
+    .container {
+        // min-width: 327px;
+        max-width: 600px;
+        .card {
+            background-color: $white;
+            border-radius: f.rem(14);
+            display: flex;
+            box-shadow: 0px 0 rgba(0, 0, 0);
+            // gap: f.rem(24);
+            flex-direction: column;
+
+            .img__container {
+                border-radius: f.rem(14);   
+                padding: f.rem(32);
+                 img {
+                    width: 100%;
+                    border-radius: f.rem(14);
+                }
+            }
+
+            &__header {
+                font-weight: $font-ex-bold;
+                font-size: f.rem(30);
+                color: $stone-900;
+            }
+
+            &__details {
+                padding: 0 f.rem(32) f.rem(32) f.rem(32);
+                display: flex;
+                gap: f.rem(24);
+                flex-direction: column;
+
+                .description {
+                    text-align: justify;
+                }
+                h1,
+                h2 {
+                    font-family: $young-font-family;
+                    font-weight: $font-normal;
+                }
+                h2 {
+                    color: $brown-800;
+                }
+                span {
+                    font-weight: $font-ex-bold;
+                }
+
+                ul,
+                ol {
+                    padding-left: 20px;
+
+                    li {
+                        margin-bottom: 10px;
+                    }
+                }
+
+                h2 {
+                    font-size: f.em(32);
+                    padding-bottom: f.rem(18);
+                }
+                .prep_time {
+                    padding: f.rem(24);
+                    background-color: $rose-50;
+                    border-radius: f.rem(12);
+                    h3 {
+                        font-size: f.rem(20);
+                        color: $rose-800;
+                        padding-bottom: f.rem(12);
+                    }
+                }
+
+                hr {
+                    background-color: $stone-100;
+                    height: 1px;
+                }
+                .nutrition {
+                    table {
+                        width: 100%;
+
+                        td {
+                            border-bottom: $stone-150 solid 1px;
+                            padding: f.rem(8) f.rem(16);
+                        }
+
+                        .type {
+                            color: $stone-900;
+                        }
+
+                        .amount {
+                            font-weight: $font-ex-bold;
+                            color: $brown-800;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .attribution {
+        padding-block-end: $font-size-p;
+        font-size: f.rem(12);
+        text-align: center;
+        color: $brown-800;
+        a {
+            color: $rose-800;
+            font-weight: $font-ex-bold;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@use "../../../universal-styles/functions" as f;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap");
+
+// ## Layout
+$mobile-w: 375px;
+$desktop-w: 1440px;
+
+// ## Colors
+$white: hsl(0, 0%, 100%);
+
+$stone-100: hsl(30, 54%, 90%);
+$stone-150: hsl(30, 18%, 87%);
+$stone-600: hsl(30, 10%, 34%);
+$stone-900: hsl(24, 5%, 18%);
+
+$brown-800: hsl(14, 45%, 36%);
+
+$rose-800: hsl(332, 51%, 32%);
+$rose-50: hsl(330, 100%, 98%);
+
+// ## Typography
+$font-size-p: f.rem(14);
+
+// Font
+$outfit-font-family: "Outfit", sans-serif;
+$young-font-family: "Young Serif", serif;
+
+$font-normal: 400;
+$font-bold: 600;
+$font-ex-bold: 700;
