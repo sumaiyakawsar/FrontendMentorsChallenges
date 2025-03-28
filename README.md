@@ -17,7 +17,10 @@
 | 9            | [NFT preview card component](https://sumaiyakawsar.github.io/FrontendMentorsChallenges/Projects/nft-preview-card-component)      | Newbie     | ✔️    |
 | 10            | [Ping single column coming soon page](https://sumaiyakawsar.github.io/FrontendMentorsChallenges/Projects/ping-coming-soon-page)      | Newbie     | ❌    |
 | 11            | [Interactive card details](https://sumaiyakawsar.github.io/FrontendMentorsChallenges/Projects/Interactive-card-details-form)      | Junior     | ❌    |
-| 12            | ---------      | ---------     | ❌    |
+| 12            | [Social links profile](https://sumaiyakawsar.github.io/FrontendMentorsChallenges/Projects/social-links-profile-main)      | Newbie     | ✔️     |
+| 13            | -------      | Newbie     | ❌     |
+| 14            | -------      | Newbie     | ❌     |
+
 
 Challenges from [![Frontend.io Badge](https://img.shields.io/badge/-_Frontend.io_-3F54A3?style=plastic&labelColor=3F54A3&logo=frontend-mentor&logoColor=white&link=https://www.frontendmentor.io)](https://www.frontendmentor.io/profile/sumaiyakawsar)
 
