@@ -1,4 +1,4 @@
-# Frontend Mentor - NFT preview card component
+# Frontend Mentor - Social links profile
 
 <div align="center">
   <h3>
