@@ -2,11 +2,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://sumaiyakawsar.github.io/FrontendMentorsChallenges/Projects/social-links-profile">
+    <a href="https://sumaiyakawsar.github.io/FrontendMentorsChallenges/Projects/10-social-links-profile">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/sumaiyakawsar/FrontendMentorsChallenges/tree/main/Projects/social-links-profile">
+    <a href="https://github.com/sumaiyakawsar/FrontendMentorsChallenges/tree/main/Projects/10-social-links-profile">
       Solution
     </a>
     <span> | </span>
@@ -24,7 +24,7 @@
 
 ### Screenshot
 
-![Screenshot of the component](../../images/project12-social-links-profile.png)
+![Screenshot of the component](../../images/project10-social-links-profile.png)
 
 
 ## My process

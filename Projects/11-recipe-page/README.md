@@ -2,11 +2,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://sumaiyakawsar.github.io/FrontendMentorsChallenges/Projects/recipe-page">
+    <a href="https://sumaiyakawsar.github.io/FrontendMentorsChallenges/Projects/11-recipe-page">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/sumaiyakawsar/FrontendMentorsChallenges/tree/main/Projects/recipe-page">
+    <a href="https://github.com/sumaiyakawsar/FrontendMentorsChallenges/tree/main/Projects/11-recipe-page">
       Solution
     </a>
     <span> | </span>
@@ -24,7 +24,7 @@
 
 ### Screenshot
 
-![Screenshot of the component](../../images/project13-recipe-page.png)
+![Screenshot of the component](../../images/project11-recipe-page.png)
 
 
 ## My process

@@ -2,11 +2,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://sumaiyakawsar.github.io/FrontendMentorsChallenges/Projects/blog-preview-card">
+    <a href="https://sumaiyakawsar.github.io/FrontendMentorsChallenges/Projects/7-blog-preview-card">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/sumaiyakawsar/FrontendMentorsChallenges/tree/main/Projects/blog-preview-card">
+    <a href="https://github.com/sumaiyakawsar/FrontendMentorsChallenges/tree/main/Projects/7-blog-preview-card">
       Solution
     </a>
     <span> | </span>
@@ -46,4 +46,4 @@ The more projects I complete the more I learn.
 
 <!-- - Website - [Add your name here](https://www.your-site.com) -->
 
-[![FrontendMentor Badge](https://img.shields.io/badge/-_SumaiyaKawsar_-3F54A3?style=plastic&labelColor=3F54A3&logo=frontend-mentor&logoColor=white&link=https://www.frontendmentor.io/profile/sumaiyakawsar)](https://www.frontendmentor.io/profile/sumaiyakawsar) [![Twitter Badge](https://img.shields.io/badge/-_SumaiyaKawsar_-55acee?style=plastic&labelColor=55acee&logo=twitter&logoColor=white&link=https://x.com/SumaiyaKawsar_)](https://x.com/SumaiyaKawsar_)
+[![FrontendMentor Badge](https://img.shields.io/badge/-_SumaiyaKawsar_-3F54A3?style=plastic&labelColor=3F54A3&logo=frontend-mentor&logoColor=white&link=https://www.frontendmentor.io/profile/sumaiyakawsar)](https://www.frontendmentor.io/profile/sumaiyakawsar) [![X Badge](https://img.shields.io/badge/-_SumaiyaKawsar_-black?style=plastic&labelColor=black&logo=X&logoColor=white&link=https://x.com/SumaiyaKawsar_)](https://x.com/SumaiyaKawsar_)
