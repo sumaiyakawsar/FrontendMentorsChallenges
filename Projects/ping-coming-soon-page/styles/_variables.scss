@@ -1,0 +1,32 @@
+@use "../../../universal-styles/functions" as f;
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+// Colors
+// Primary
+$blue: hsl(223, 87%, 63%);
+
+// Neutral
+$white: rgb(255, 255, 255);
+$gray: hsl(0, 0%, 59%);
+$very-dark-blue: hsl(209, 33%, 12%);
+
+// Secondary
+$pale-blue: hsl(223, 100%, 88%);
+$light-red: hsl(354, 100%, 66%);
+
+// ## Typography
+$font-size-p: f.rem(20);
+
+// Font
+$font-family: "Libre Franklin", sans-serif;
+
+$font-thin: 300;
+$font-normal: 600;
+$font-bold: 700;
+// Icons
+
+// For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+// - [Font Awesome](https://fontawesome.com)
+// - [IcoMoon](https://icomoon.io)
+// - [Ionicons](https://ionicons.com)
