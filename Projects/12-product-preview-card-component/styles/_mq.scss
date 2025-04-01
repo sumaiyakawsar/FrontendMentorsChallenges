@@ -1,28 +1,25 @@
 @use "../../../universal-styles/functions" as f;
 $breakpoints-down: (
-    "medium": f.em(1440),
-    "small": f.em(600)
+    "medium": f.rem(1440),
+    "small": f.rem(600)
 );
+
 @mixin breakpoint($size) {
-    @media (max-width: map-get($breakpoints-down, $size)) {
+    @media screen and (max-width: map-get($breakpoints-down, $size)) {
         @content;
     }
 }
 
 //Media Queries(Medium Devices - 1440px)
 @include breakpoint(medium) {
-    .container {
-        .img__container {
-            padding: f.rem(0);
-        }
+    .card {
+        flex-direction: column;
     }
 }
 
 //Media Queries(small Devices - 375px)
 @include breakpoint(small) {
-    .container {
-        .img__container {
-            padding: f.rem(0);
-        }
+    .card {
+        flex-direction: column;
     }
 }

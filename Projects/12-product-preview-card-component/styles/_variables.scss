@@ -1,0 +1,23 @@
+@use "../../../universal-styles/functions" as f; 
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+// Colors
+// Primary
+$green-500: hsl(158, 36%, 37%);
+$green-700: hsl(158, 42%, 18%);
+
+// Neutral
+$black: hsl(212, 21%, 14%);
+$grey: hsl(228, 12%, 48%);
+$cream: hsl(30, 38%, 92%);
+$white: hsl(0, 0%, 100%);
+
+// ## Typography
+$font-size-p: f.rem(14);
+
+// Font
+$mont-font-family: "Montserrat", sans-serif;
+$fraunces-font-family: "Fraunces", serif;
+
+$font-normal: 500;
+$font-bold: 700;

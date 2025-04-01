@@ -1,0 +1,115 @@
+@use "../../../universal-styles/functions" as f;
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+@import "variables";
+@import "mq";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: $cream;
+    font-family: $mont-font-family;
+    display: flex;
+    font-size: $font-size-p;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    line-height: 1.5;
+
+    .container {
+        max-width: f.rem(600);
+        .card {
+            background-color: $white;
+            border-radius: f.rem(8);
+            box-shadow: 0px 0 rgba(0, 0, 0);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            // align-items: center;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+            max-width: 600px;
+
+            .img__container {
+                flex: 1;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: f.rem(8) 0 0 f.rem(8);
+                }
+            }
+
+            &__details {
+                flex: 1;
+                padding: f.rem(24);
+                display: flex;
+                gap: f.rem(18);
+                flex-direction: column;
+
+                .tag {
+                    text-transform: uppercase;
+                    letter-spacing: f.rem(5);
+                    color: $grey;
+                }
+                h1 {
+                    font-family: $fraunces-font-family;
+                    font-weight: $font-bold;
+                }
+
+                .description {
+                    color: $grey;
+                }
+
+                .price {
+                    display: flex;
+                    align-items: center;
+                    gap: f.rem(20);
+                    .now-price {
+                        color: $green-500;
+                        font-family: $fraunces-font-family;
+                        font-weight: $font-bold;
+                        font-size: f.rem(32);
+                    }
+                    .old-price {
+                        text-decoration: line-through;
+                        color: $grey;
+                    }
+                }
+
+                .btn {
+                    color: $white;
+                    background-color: $green-500;
+                    display: flex;
+                    justify-content: center;
+                    gap: f.rem(10);
+                    padding: f.rem(16);
+                    border-radius: f.rem(8);
+                    transition: all 0.5s;
+
+                    &:hover {
+                        background-color: $green-700;
+                    }
+                }
+            }
+        }
+    }
+
+    .attribution {
+        padding-block-end: $font-size-p;
+        font-size: f.rem(12);
+        text-align: center;
+        a {
+            color: $green-500;
+            font-weight: $font-bold;
+        }
+    }
+}
