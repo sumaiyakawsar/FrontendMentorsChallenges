@@ -12,14 +12,11 @@ $breakpoints-down: (
 
 //Media Queries(Medium Devices - 1440px)
 @include breakpoint(medium) {
-    .card {
-        flex-direction: column;
-    }
 }
 
-//Media Queries(small Devices - 375px)
+//Media Queries(small Devices - 600px)
 @include breakpoint(small) {
     .card {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 }
