@@ -29,7 +29,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: f.rem(20);
+        gap: f.rem(32);
 
         header {
             text-align: center;
@@ -49,10 +49,9 @@ body {
             font-size: f.rem(12);
         }
         .card-wrapper {
+            max-width: f.em(1100);
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-
-            // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: f.rem(30);
             grid-template-areas:
                 "supervisor team-builder calculator"
@@ -60,6 +59,7 @@ body {
             justify-content: center;
             align-items: center;
             padding: f.rem(32);
+            transition: all ease-in-out 0.5s;
 
             .card {
                 background-color: $white;
