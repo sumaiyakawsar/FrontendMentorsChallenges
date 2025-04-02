@@ -1,0 +1,29 @@
+@use "../../../universal-styles/functions" as f;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+// Colors
+// Primary
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+// Neutral
+$grey-500: hsl(234, 12%, 34%);
+$grey-400: hsl(212, 6%, 44%);
+$white: hsl(0, 0%, 100%);
+
+$red-10: hsla(0, 78%, 62%, 0.2);
+$cyan-10: hsla(180, 62%, 55%, 0.2);
+$orange-10: hsla(34, 97%, 64%, 0.2);
+$blue-10: hsla(212, 86%, 64%, 0.2);
+
+// ## Typography
+$font-size-p: f.rem(15);
+
+// Font
+$font-family: "Poppins", sans-serif;
+
+$font-thin:200;
+$font-normal: 400;
+$font-bold: 600;

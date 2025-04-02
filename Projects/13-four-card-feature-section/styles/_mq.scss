@@ -1,7 +1,7 @@
 @use "../../../universal-styles/functions" as f;
 $breakpoints-down: (
     "medium": f.rem(1440),
-    "small": f.rem(600)
+    "small": f.rem(900)
 );
 
 @mixin breakpoint($size) {
@@ -16,8 +16,14 @@ $breakpoints-down: (
 
 //Media Queries(small Devices - 600px)
 @include breakpoint(small) {
-    .card {
-        margin: f.rem(32);
-        flex-direction: column !important;
+    .card-wrapper {
+        grid-template-columns: repeat(1, 1fr) !important; // 1 column for mobile
+
+        // grid-template-columns: 1fr !important;
+        grid-template-areas:
+            "supervisor"
+            "team-builder"
+            "calculator"
+            "karma" !important;
     }
 }

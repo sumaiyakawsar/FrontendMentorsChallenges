@@ -1,0 +1,125 @@
+@use "../../../universal-styles/functions" as f;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+@import "variables";
+@import "mq";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: $white;
+    font-family: $font-family;
+    display: flex;
+    font-size: $font-size-p;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    line-height: 1.5;
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: f.rem(20);
+
+        header {
+            text-align: center;
+            max-width: f.em(500);
+            h1 {
+                font-weight: $font-thin;
+            }
+            h2 {
+                font-weight: $font-bold;
+                color: $grey-500;
+                font-size: f.rem(30);
+            }
+        }
+        p {
+            color: $grey-400;
+            margin-top: f.rem(10);
+            font-size: f.rem(12);
+        }
+        .card-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: f.rem(30);
+            grid-template-areas:
+                "supervisor team-builder calculator"
+                "supervisor karma calculator";
+            justify-content: center;
+            align-items: center;
+            padding: f.rem(32);
+
+            .card {
+                background-color: $white;
+                border-radius: f.rem(8);
+                text-align: left;
+                padding: f.rem(30) f.rem(20);
+                height: f.em(250);
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                &:hover {
+                    transform: translateY(-5px);
+                }
+
+                &.supervisor {
+                    border-top: $cyan 4px solid;
+                    grid-area: supervisor;
+                    box-shadow: 0 4px 6px $cyan-10;
+                }
+
+                &.team-builder {
+                    border-top: $red 4px solid;
+                    grid-area: team-builder;
+                    box-shadow: 0 4px 6px $red-10;
+                }
+
+                &.calculator {
+                    border-top: $blue 4px solid;
+                    grid-area: calculator;
+                    box-shadow: 0 4px 6px $blue-10;
+                }
+
+                &.karma {
+                    border-top: $orange 4px solid;
+                    grid-area: karma;
+                    box-shadow: 0 4px 6px $orange-10;
+                }
+
+                &__title {
+                    color: $grey-500;
+                    font-size: f.rem(18);
+                    font-weight: $font-bold;
+                }
+
+                img {
+                    width: f.rem(50);
+                    align-self: flex-end;
+                }
+            }
+        }
+    }
+    .attribution {
+        padding-block-end: $font-size-p;
+        font-size: f.rem(12);
+        text-align: center;
+        a {
+            color: hsl(228, 45%, 44%);
+            font-weight: $font-bold;
+        }
+    }
+}
