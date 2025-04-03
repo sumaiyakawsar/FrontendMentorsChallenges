@@ -1,0 +1,135 @@
+@use "../../../universal-styles/functions" as f;
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+@import "variables";
+@import "mq";
+
+* {
+    margin: 0;
+    padding: 0;
+    // border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: $white;
+    font-family: $font-family;
+    display: flex;
+    font-size: $font-size-p;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    line-height: 1.5;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        gap: f.rem(32);
+        max-width: 88%;
+        margin: 0 auto; // Centers the container
+        padding: f.rem(32);
+
+        .card-wrapper {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: f.rem(24);
+            grid-template-areas:
+                "testimonial1"
+                "testimonial2"
+                "testimonial3"
+                "testimonial4"
+                "testimonial5";
+            padding: f.rem(32);
+
+            .card {
+                border-radius: f.rem(8);
+                padding: f.rem(32);
+                display: flex;
+                flex-direction: column;
+                gap: f.rem(20);
+                backdrop-filter: blur(10px);
+                box-shadow: $box-shadow;
+                transition: all ease-in-out 0.5s;
+
+                &:hover {
+                    box-shadow: 0 0 15px $purple-500;
+                }
+                &.testimonial1 {
+                    grid-area: testimonial1;
+                    background-color: $purple-500;
+                    color: $purple-50;
+                    img {
+                        border: $purple-300 4px solid;
+                    }
+                    h1 {
+                        color: $white;
+                    }
+                }
+
+                &.testimonial2 {
+                    grid-area: testimonial2;
+                    background-color: $grey-400;
+                    color: $grey-100;
+                    h1 {
+                        color: $white;
+                    }
+                }
+
+                &.testimonial3 {
+                    grid-area: testimonial3;
+
+                    color: $grey-400;
+                }
+
+                &.testimonial4 {
+                    grid-area: testimonial4;
+                    background-color: $dark-blue;
+                    color: $grey-100;
+                    img {
+                        border: $purple-500 4px solid;
+                    }
+                    h1 {
+                        color: $white;
+                    }
+                }
+                &.testimonial5 {
+                    grid-area: testimonial5;
+                    color: $grey-400;
+                }
+
+                &__header {
+                    display: flex;
+                    gap: f.rem(28);
+                    align-items: center;
+                    img {
+                        border-radius: 50%;
+                    }
+                    .name {
+                        font-weight: $font-bold;
+                    }
+                    .status {
+                        font-weight: $font-normal;
+                    }
+                }
+
+                &__topic {
+                    font-size: f.em(26);
+                    font-weight: $font-bold;
+                }
+            }
+        }
+    }
+    .attribution {
+        padding-block-end: $font-size-p;
+        font-size: f.rem(12);
+        text-align: center;
+        a {
+            color: hsl(228, 45%, 44%);
+            font-weight: $font-bold;
+        }
+    }
+}

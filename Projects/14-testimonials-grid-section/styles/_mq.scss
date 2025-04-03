@@ -1,0 +1,38 @@
+@use "../../../universal-styles/functions" as f;
+$breakpoints-down: (
+    "medium": f.rem(1440),
+    "small": f.rem(770)
+);
+
+@mixin breakpoint($size) {
+    @media screen and (min-width: map-get($breakpoints-down, $size)) {
+        @content;
+    }
+}
+
+//Media Queries(Medium Devices - 1440px)
+@include breakpoint(medium) {
+}
+
+//Media Queries(small Devices - 600px)
+@include breakpoint(small) {
+    .card-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "testimonial1 testimonial1 testimonial2 testimonial5"
+            "testimonial3 testimonial4 testimonial4 testimonial5" !important;
+        .testimonial1 {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 50px;
+                width: 100px; // Adjust size as needed
+                height: 100px;
+                background: url("../images/bg-pattern-quotation.svg") no-repeat center;
+                background-size: contain;
+            }
+        }
+    }
+}
