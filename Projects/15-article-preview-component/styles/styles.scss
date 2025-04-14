@@ -37,7 +37,7 @@ body {
             flex-direction: column;
             justify-content: center;
 
-            background: $light-grayish-blue;
+            background: white;
             box-shadow: $box-shadow;
             transition: all ease-in-out 0.5s;
 
@@ -68,8 +68,7 @@ body {
                 font-size: f.rem(18);
             }
 
-            &__footer {
-                // padding: 0 f.rem(32) f.rem(16) f.rem(32);
+            &__footer { 
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
