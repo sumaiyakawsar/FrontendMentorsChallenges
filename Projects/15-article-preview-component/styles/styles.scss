@@ -1,0 +1,209 @@
+@use "../../../universal-styles/functions" as f;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+@import "mq";
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    user-select: none;
+}
+
+body {
+    background: $light-grayish-blue;
+    font-family: $font-family;
+    font-size: $font-size-p;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    line-height: 1.5;
+    margin: 0 auto;
+
+    .container {
+        width: 90%;
+        min-width: f.rem(500);
+        .card {
+            border-radius: f.rem(8);
+            margin: f.rem(80);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            background: $light-grayish-blue;
+            box-shadow: $box-shadow;
+            transition: all ease-in-out 0.5s;
+
+            .card-image {
+                flex: 1;
+                overflow: hidden;
+                border-radius: f.rem(8);
+            }
+
+            &__img {
+                object-fit: cover;
+            }
+
+            &__content {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                .details {
+                    padding: f.rem(32);
+                    display: flex;
+                    flex-direction: column;
+                    gap: f.rem(22);
+                }
+            }
+
+            &__header {
+                font-size: f.rem(18);
+            }
+
+            &__footer {
+                // padding: 0 f.rem(32) f.rem(16) f.rem(32);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: relative;
+
+                .author {
+                    width: 100%;
+                    padding: f.rem(16) f.rem(32);
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: f.rem(22);
+
+                    .profile {
+                        display: flex;
+                        align-items: center;
+                        gap: f.rem(30);
+                    }
+                    &__img {
+                        height: auto;
+                        width: 50px;
+                        border-radius: 50%;
+                    }
+                    &__details {
+                        color: $very-dark-grayish-blue;
+                        .name {
+                            font-weight: $font-bold;
+                        }
+                        .date {
+                            color: $grayish-blue;
+                        }
+                    }
+                    .share-btn {
+                        border-radius: 50%;
+                        background-color: $light-grayish-blue;
+                        box-shadow: $box-shadow;
+                        padding: f.rem(8);
+                        user-select: none;
+                        cursor: pointer;
+
+                        z-index: 999;
+                        &.fa-share {
+                            color: $desaturated-dark-blue;
+                            z-index: 20;
+                        }
+
+                        &:hover {
+                            background-color: $grayish-blue;
+                            &.fa-share {
+                                color: $light-grayish-blue;
+                            }
+                        }
+                    }
+                }
+
+                .share-container {
+                    .share-popup {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        bottom: 0;
+
+                        text-align: center;
+                        padding: f.rem(16) f.rem(32);
+                        background-color: $very-dark-grayish-blue;
+                        box-shadow: $box-shadow;
+
+                        animation: slide-left 0.3s cubic-bezier(0.5, 0.8, 0.5, 0.8) both;
+
+                        color: white;
+                        border-radius: f.rem(8);
+
+                        z-index: 0;
+
+                        display: none;
+                        width: 100%;
+
+                        .share-box {
+                            max-width: 100%;
+                            min-width: 80%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                        }
+                        &.clicked {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                        }
+
+                        span {
+                            letter-spacing: f.em(8);
+                            color: $desaturated-dark-blue;
+                        }
+
+                        .fa-brands {
+                            color: $light-grayish-blue;
+                            font-size: f.rem(20);
+                            &:hover {
+                                filter: invert(100);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @keyframes slide-top {
+        0% {
+            transform: translateY(100%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slide-left {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .attribution {
+        padding-block-end: $font-size-p;
+        font-size: f.rem(12);
+        text-align: center;
+        a {
+            color: hsl(228, 45%, 44%);
+            font-weight: $font-bold;
+        }
+    }
+}

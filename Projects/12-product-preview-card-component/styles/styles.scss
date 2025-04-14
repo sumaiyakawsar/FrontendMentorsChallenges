@@ -24,9 +24,10 @@ body {
     min-height: 100vh;
     line-height: 1.5;
 
-    .container {   display: flex;
-    justify-content: center;
-    align-items: center;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .card {
             background-color: $white;
             border-radius: f.rem(8);

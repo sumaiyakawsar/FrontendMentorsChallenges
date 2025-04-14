@@ -1,7 +1,7 @@
 @use "../../../universal-styles/functions" as f;
 $breakpoints-down: (
-    "medium": f.rem(1440),
-    "small": f.rem(770)
+    "medium": f.em(440),
+    "large": f.em(770)
 );
 
 @mixin breakpoint($size) {
@@ -10,17 +10,28 @@ $breakpoints-down: (
     }
 }
 
-//Media Queries(Medium Devices - 1440px)
+//Media Queries(Medium Devices - 440)
 @include breakpoint(medium) {
+    .card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-areas:
+            "testimonial1 testimonial2"
+            "testimonial3 testimonial4"
+            "testimonial5 testimonial5" !important;
+    }
 }
 
-//Media Queries(small Devices - 600px)
-@include breakpoint(small) {
+//Media Queries(large Devices - 770)
+@include breakpoint(large) {
     .card-wrapper {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr) !important;
         grid-template-areas:
             "testimonial1 testimonial1 testimonial2 testimonial5"
             "testimonial3 testimonial4 testimonial4 testimonial5" !important;
+        .card-header {
+            z-index: 999;
+        }
         .testimonial1 {
             position: relative;
             &::before {
@@ -30,6 +41,7 @@ $breakpoints-down: (
                 right: 50px;
                 width: 100px; // Adjust size as needed
                 height: 100px;
+                opacity: 0.5;
                 background: url("../images/bg-pattern-quotation.svg") no-repeat center;
                 background-size: contain;
             }

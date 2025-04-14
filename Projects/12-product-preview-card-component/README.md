@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](../../images/Projects12-product-preview-card-component.png)
+![Screenshot](../../images/project12-product-preview-card-component.png)
 
 ## My process
 

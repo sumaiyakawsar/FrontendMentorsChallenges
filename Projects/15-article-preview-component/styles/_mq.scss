@@ -1,0 +1,69 @@
+@use "../../../universal-styles/functions" as f;
+
+@import "variables";
+
+$breakpoints-down: (
+    "medium": f.rem(992),
+    "small": f.rem(768)
+);
+
+@mixin breakpoint($size) {
+    @media screen and (min-width: map-get($breakpoints-down, $size)) {
+        @content;
+    }
+}
+
+//Media Queries(Medium Devices - 1440px)
+@include breakpoint(medium) {
+}
+
+//Media Queries(small Devices - 600px)
+@include breakpoint(small) {
+    .container {
+        max-width: f.rem(900);
+        .card {
+            flex-direction: row !important;
+
+            .card-image {
+                .card__img {
+                    width: 100% !important;
+                    height: 100% !important;
+                    object-fit: cover !important;
+                    display: block !important;
+                }
+            }
+        }
+
+        .share-container {
+            .share-popup {
+                display: none !important;
+                animation: slide-top 0.3s cubic-bezier(0.5, 0.8, 0.5, 0.8) both !important;
+
+                width: 250px !important;
+                left: 50% !important;
+                top: -60px !important;
+
+                &.clicked {
+                    height: 65px !important;
+                    display: flex !important;
+                }
+
+                .share-box {
+                    width: 100%;
+                }
+
+                .triangle-down {
+                    content: "" !important;
+                    display: block;
+                    border-top: 15px solid $very-dark-grayish-blue !important;
+                    border-right: 10px solid transparent !important;
+                    border-left: 10px solid transparent !important;
+                    position: absolute !important;
+                    bottom: -20% !important;
+                    left: 50% !important;
+                    z-index: 999 !important;
+                }
+            }
+        }
+    }
+}
